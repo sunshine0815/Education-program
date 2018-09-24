@@ -1,0 +1,22 @@
+.video {
+  width: 50%;
+  height: 320rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rpx;
+}
+.video image{
+  width: 95%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.video .title{
+  font-size: 12px;
+}
+
+.video .viewcount{
+  font-size: 10px;
+  color: #999;
+  padding: 5rpx;
+}

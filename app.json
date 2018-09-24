@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/course/course",
+    "pages/mine/mine",
+    "pages/study/study"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00ff00",
+    "navigationBarTitleText": "酷叮鱼项目",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text":"首页",
+      "iconPath": "/images/tabBar/icon-home.png",
+      "selectedIconPath": "/images/tabBar/icon-home-selected.png"
+    },
+    {
+      "pagePath": "pages/course/course",
+      "text": "课程",
+      "iconPath": "/images/tabBar/icon-course.png",
+      "selectedIconPath": "/images/tabBar/icon-course-selected.png"
+    },
+    {
+      "pagePath": "pages/study/study",
+      "text": "学习",
+      "iconPath": "/images/tabBar/icon-study.png",
+      "selectedIconPath": "/images/tabBar/icon-study-selected.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/images/tabBar/icon-mine.png",
+      "selectedIconPath": "/images/tabBar/icon-mine-selected.png"
+    }
+  ]
+  }
+}
