@@ -4,7 +4,7 @@ module.exports = [
     "title":"绑定手机号",
     "img_url":"/images/列表箭头.png",
     "type":'arrow',
-    'navigateTo':'/pages/mine/mobile-bind/mobile-bind'
+    'navigateTo':'/pages/mobile-bind/mobile-bind'
   },
   {
     "id": 2,

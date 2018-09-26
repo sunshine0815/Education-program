@@ -1,0 +1,23 @@
+/* components/settings/settings.wxss */
+.setting{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#ffffff;
+  padding: 0rpx 30rpx;
+}
+
+.setting text{
+  font-size: 30rpx;
+}
+
+.setting image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.setting .date{
+  font-size: 24rpx;
+  color: #A2A2A2;
+}

@@ -1,0 +1,15 @@
+<wxs src="../../utils/datefilter.wxs" module="datefilter"/>
+<!--components/settings/settings.wxml-->
+<view bindtap='settingClick' class="setting">
+  <!-- 左边的文字 -->
+  <text>{{setting.title}}</text>
+  <block wx:if="{{setting.type==='date'}}">
+    <text  class="date">{{datefilter.formatTime(setting.date,'YYYY-MM-DD HH:mm')}}</text>
+  </block>
+  <block wx:elif="{{setting.type==='arrow'}}">
+    <image src="/images/列表箭头.png"/>
+  </block>
+  <block wx:elif="{{setting.type==='switch'}}">
+    <switch checked />
+  </block>
+</view>

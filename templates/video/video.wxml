@@ -1,36 +1,3 @@
-<!-- <template nome="video">
-<template name="video">
-
-  <view class="video">
-  <view class="video">
-
-    <image src="{{img_url}}"></image>
-    <image src="{{img_url}}"></image>
-
-  <view class="title">
-  <view class="title">
-
-     <text>{{title}}</text>
-     <text>{{title}}</text>
-
-  </view>
-  </view>
-
-   <view class="viewcount">
-   <view class="viewcount">
-
-      <text>{{viewcount}}次人观看</text>
-      <text>{{viewcount}}次人观看</text>
-
-    </view>
-    </view>
-
-     </view>
-     </view>
-</template>
-</template> -->
-
-
 <template name="video">
   <view class="video">
     <image src="{{img_url}}"></image>
@@ -42,4 +9,3 @@
     </view>
   </view>
 </template>
-

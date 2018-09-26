@@ -1,3 +1,5 @@
+import settings from '../../datas/settings.js'
+import util from '../../utils/util.js'
 // pages/mine/mine.js
 Page({
 
@@ -5,14 +7,29 @@ Page({
    * 页面的初始数据
    */
   data: {
+    settings:[],
+    expiresData: {
+      id: 10001,
+      "title": "VIP会员到期时间",
+      // "date": util.formatTime(new Date(),"YYYY-MM-DD HH:mm"),
+      "date": new Date(),
+      "type": 'date'
+    }
+  },
 
+  navigateTo(e){
+    wx.navigateTo({
+      url: e.detail.navigateTo,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      settings
+    })
   },
 
   /**

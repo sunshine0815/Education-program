@@ -1,0 +1,18 @@
+<!--components/course/course.wxml-->
+<view class="course">
+  <!-- 左边的图片 -->
+  <image src="{{course.img_url}}"></image>
+  <!-- 中间的标题和副标题 -->
+  <view class="title">
+    <!-- 标题 -->
+    <view>
+      <text class="title1">{{course.title}}</text>
+    </view>
+    <!-- 副标题 -->
+    <view>
+      <text  class="subtitle">{{course.subtitle}}</text>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="tips" style="background-color:{{course.isFull?'#CACACA':'#FF547C'}};"><text>{{course.isFull ? '人数满额':'了解课程'}}</text></view>
+</view>

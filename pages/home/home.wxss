@@ -2,9 +2,7 @@
 @import "/templates/tips2/tips2.wxss";
 @import "/templates/course/course.wxss";
 @import "/templates/video/video.wxss";
-
 /* pages/home/home.wxss */
-/* 1.轮播图样式 */
 swiper{
   width: 750rpx;
   height: 400rpx;
@@ -14,7 +12,7 @@ swiper{
   width: 100%;
   height: 100%;
 }
-/* 提示 */
+
 .hot-course{
   padding: 10rpx;
 }
@@ -23,19 +21,20 @@ swiper{
   display: flex;
   justify-content: space-between;
 }
-/* 横向滚动 */
+
 .course-scroll{
+  /* background-color: green; */
   height: 180rpx;
   white-space: nowrap;
+  padding-left: 5rpx;
   padding-top: 10rpx;
-  padding-left: 10rpx;
 }
 
 .recommend-video{
   padding: 10rpx;
 }
 
-.videos {
+.videos{
   display: flex;
   flex-wrap: wrap;
 }

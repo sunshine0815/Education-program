@@ -1,22 +1,31 @@
-import courses from '../../datas/courses.js'
-
-// pages/course/course.js
+const app = getApp()
+// pages/mobile-bind/mobile-bind.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    courses:[]
+    mobile:{
+      placeholder:'请输入手机号',
+      type:'mobile'
+    },
+    vcode:{
+      placeholder: '请输入验证码',
+      type: 'vcode',
+      title:'获取验证码'
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      courses
-    })
+
+  },
+
+  bind(){
+    console.log(app.globalData)
   },
 
   /**

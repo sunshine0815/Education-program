@@ -1,2 +1,19 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view>
+  <!-- 1.0 头像部分 -->
+  <view class="avatar">
+    <image src="/images/头像 男孩.png"></image>
+    <text>酷酷</text>
+  </view>
+
+  <!-- 2.0 VIP会员到期时间 -->
+  <view class="expiresData">
+    <settings setting="{{expiresData}}" />
+  </view>
+
+  <!-- 3.0 设置 -->
+  <view class="settings">
+    <block wx:for="{{settings}}" wx:for-item="setting" wx:key="{{setting.id}}">
+      <settings bind:needNavigate="navigateTo" setting="{{setting}}" />
+    </block>
+  </view>
+</view>

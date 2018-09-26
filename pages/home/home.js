@@ -1,6 +1,7 @@
 import swipers from '../../datas/swipers.js'
 import courses from '../../datas/courses.js'
 import videos from '../../datas/videos.js'
+
 // pages/home/home.js
 Page({
 
@@ -8,9 +9,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swipers:[],
-    courses:[],
-    videos:[],
+    swipers:[], // 轮播图数据
+    courses:[], // 课程数据
+    videos:[], //视频数据
     tips1: {
       img_url: "/images/热门.png",
       content: '热门课程'
@@ -25,22 +26,28 @@ Page({
     }
   },
 
+  more(){
+    wx.switchTab({
+      url: '/pages/course/course',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      swipers,
+      courses,
+      videos
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-      this.setData({
-        swipers,
-        courses,
-        videos
-      })
+
   },
 
   /**

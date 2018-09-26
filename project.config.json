@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
 	"appid": "wx3e2557bc19326801",
-	"projectname": "cool_fish",
+	"projectname": "cool_fish%E5%AE%8C%E7%BB%93%E7%89%88",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -27,13 +27,35 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "课程",
+					"pathName": "pages/course/course",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手机绑定",
+					"pathName": "pages/mobile-bind/mobile-bind"
+				}
+			]
 		}
 	}
 }
